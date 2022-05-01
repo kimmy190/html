@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image tag</title>
+</head>
+<body>
+    <img src="./image/amy.jpg" alt="this is an avatar of myself." width="300">
+    <p> For the image tag, "img", 
+        <br>we are going to use the attribute "src" short for source.
+        Then type the file link for the pic. 
+        <br> One example would be create an "image" folder inside the folder where the html file are part of,
+        then type in the image name. like above. 
+        <br>For more , going to add " ./ " in front of the image/--- as that refers 
+        to open the image folder from the current folder where the html file is running.
+        <br> so itd look like this => " ./image/amy.jpg ", which is an another way to say it.
+    </p>
+    <img src="../image/amy.jpg" width="20%">
+    <p> 
+        This is the way where the meaning gets completely different. 
+        <br> the " ../ " means the folder that contains the folder of html file is part of. 
+        <br>So an upper folder, to make it easy and since from that folder the image folder is not contained directly, 
+        indicating that the file route is wrong, so it'd give you an error. 
+        <br> For me this showed me a normal pic as this html file was inside an upper file of " html_fe ", 
+        <br> however, if this is not the case, where the html file is just a seperate file, the above error would work.
+    </p>
+    <p>
+        So basically it is this : 
+    </p>
+    <img src="image/meaning_of_sign.jpg">
+
+    <p>
+        <h2>HTML attribute : alt</h2>
+        In case the image won't load, use another attribute of "alt" to provide some explanations. 
+        <br>So the "alt" part shows up when the image cannot be displayed.
+        
+        <h2>HTML attribute : width & height</h2>
+        this is an attribute that controls the size of the image. 
+        <br> If use either one of them, it will automatically control the size for you. 
+        So for example, if you only write width="300", the height will be automatically 
+        adjusted by the proportion of the orginial size of the pic. 
+        <br> If write both, it can damaage the actual proportion of the pic
+        <br> Also can assign percentage to width and adjust the size. 
+    </p>
+
+    <p> 
+        <h2>Bringing image from an external site(not folder)</h2>
+        go to google and click the google image and open it in a new page. 
+        <br> Then the new page link will show the route of the image and copy and paste
+        the link and assign it to src.
+        (only works in chrome)
+        <br> I think the google image is not showing up cuz its white..
+    </p>
+    <a href="https://www.google.com" target="_blank">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png">
+    </a>
+    <p>
+        Morover, if put the img tag inside the a tag, and assign the link you want to direct using the attribute href, 
+        <br> you will be able to head to the link by clicking the image. 
+    </p>
+
+</body>
+</html>
