@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Comments function</title>
+</head>
+<body>
+    <h1>Adding a comments section; Allowing for interaction</h1>
+    <p>
+        To do this, need to know a back end, however, comments function taks a lot of effort
+        as there will be spam types of message, so there should be some spam block and a lot of other functions to 
+        advance the interaction. Simply its very hard,
+        <br>but before that, we are going to get info from other websites. 
+        <br>Go to <a href="https://disqus.com" type="_blank">disqus</a> website, or 
+        <a href="https://livere.com" type="_blank">LiveRe</a>. 
+    </p>
+
+    <p>
+        <ol>
+            <li>Go to disqus, login. </li>
+            <li>Press get started, and select 'I want to install disqus on my site'.</li>
+            <li>Type the website name and select category, then select subscribe.</li>
+            <li>When there's bunch of items, select the below button 'I dont see my platform listed, install manually with <strong>Universal Code</strong></li>
+            <li>You will see a code and copy and paste it below.</li>
+        </ol>
+    </p>
+
+    <p>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://comment-function-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+
+</body>
+</html>
